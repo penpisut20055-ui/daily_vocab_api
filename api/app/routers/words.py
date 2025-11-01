@@ -18,4 +18,5 @@ words = [
 
 @router.get("/word", response_model=WordResponse)
 def get_random_word():
-    ... 
+    random_word = random.choice(words)
+    return random_word
